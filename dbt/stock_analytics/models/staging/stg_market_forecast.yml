@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_market_forecast
+    description: "Cleaned staging view for ANALYTICS.MARKET_DATA forecasts"
+    tests:
+      - not_null:
+          column_name: symbol
+      - not_null:
+          column_name: date
+      - unique:   { column_name: pk_symbol_date }

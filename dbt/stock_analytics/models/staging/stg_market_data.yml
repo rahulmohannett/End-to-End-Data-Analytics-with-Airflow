@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_market_data
+    description: "Cleaned staging view for RAW.MARKET_DATA"
+    tests:
+      - not_null:
+          column_name: symbol
+      - not_null:
+          column_name: date
+      - unique:   { column_name: pk_symbol_date }

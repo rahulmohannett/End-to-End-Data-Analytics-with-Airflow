@@ -1,0 +1,26 @@
+stock_analytics:
+  outputs:
+    dev:
+      account: sfedu02-lvb17920
+      database: USER_DB_OSTRICH
+      password: Declan41arsenal
+      role: TRAINING_ROLE
+      schema: analytics
+      threads: 1
+      type: snowflake
+      user: OSTRICH
+      warehouse: OSTRICH_QUERY_WH
+  target: dev
+stock_analytics:
+  outputs:
+    dev:
+      account: sfedu02-lvb17920
+      database: USER_DB_OSTRICH
+      password: Declan41arsenal
+      role: TRAINING_ROLE
+      schema: PUBLIC
+      threads: 1
+      type: snowflake
+      user: OSTRICH
+      warehouse: OSTRICH_QUERY_WH
+  target: dev

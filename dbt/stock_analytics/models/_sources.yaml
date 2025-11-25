@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw
+    database: "{{ env_var('SNOWFLAKE_DATABASE', 'USER_DB_OSTRICH') }}"
+    schema: RAW
+    tables:
+      - name: MARKET_DATA
+
+  - name: analytics
+    database: "{{ env_var('SNOWFLAKE_DATABASE', 'USER_DB_OSTRICH') }}"
+    schema: ANALYTICS
+    tables:
+      - name: MARKET_DATA

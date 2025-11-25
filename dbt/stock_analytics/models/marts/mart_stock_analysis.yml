@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mart_stock_analysis
+    description: "Unified historical + forecast table."
+    tests:
+      - not_null:
+          column_name: symbol
+      - not_null:
+          column_name: date
+      - accepted_values:
+          column_name: record_type
+          values: ['historical','forecast']
+      - unique:   { column_name: pk_symbol_date }
