@@ -1,0 +1,5 @@
+apache-airflow-providers-snowflake
+pandas
+pyarrow
+yfinance
+snowflake-connector-python[pandas]
